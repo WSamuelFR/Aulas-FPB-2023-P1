@@ -7,15 +7,16 @@ public class VetorMedia {
 		Scanner sc = new Scanner(System.in);
 
 		int[] n = new int[4];
-		int soma = 0;
+		double nota = 0;
 
 		for (int i = 0; i < 3; i++) {
 			System.out.println("informe uma nota:");
 			n[i] = sc.nextInt();
+			nota = nota + n[i];
 
 		}
 
-		double media = soma / 4;
+		double media = nota / 4;
 		System.out.println("a media he:" + media);
 
 		sc.close();
